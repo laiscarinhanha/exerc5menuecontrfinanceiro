@@ -1,5 +1,4 @@
-let saldo = prompt ("Informe a quantidade de dinheiro inicial")
-saldo = parseFloat(saldo)
+let saldo = (parseFloat(prompt ("Informe a quantidade de dinheiro inicial")))
 let opcao = ""
 
 do {
@@ -10,9 +9,9 @@ do {
         "\n3. Sair"
     )
     switch (opcao) {
-        case "1": saldo += prompt ("Iforme o valor a ser adicionado")
+        case "1": saldo += parseFloat (prompt ("Iforme o valor a ser adicionado"))
         break
-        case "2": saldo -= prompt ("Informe o valor a ser retirado")
+        case "2": saldo -= parseFloat (prompt ("Informe o valor a ser retirado"))
         break
         case "3": alert ("Saindo")
         break
